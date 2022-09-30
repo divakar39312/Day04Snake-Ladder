@@ -12,7 +12,7 @@ public class SnakeLadder {
         System.out.println("Position of the player Before Game start : "+playerPosition);
         while(playerPosition != WINNING_POSITION) {
             System.out.println("\nRoll Dice to Move");
-            System.out.println("---------------------");
+            System.out.println("--------------------------");
             int dice = (int)(Math.floor((Math.random()*6)+1));
             System.out.println("The Dice is : "+dice);
             int chance = (int) Math.floor(Math.random()*3);
@@ -45,9 +45,11 @@ public class SnakeLadder {
 
                 }
             }
+            System.out.println("Move : "+i);
             System.out.println("player present Position is " + playerPosition);
-            System.out.println("Moves : "+i);
         }
+        System.out.println("");
+        System.out.println("Moves requires to finish Game is :"+i);
     }
     }
 
